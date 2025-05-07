@@ -1,10 +1,11 @@
 {
   "dependencies": {
+    "com.unity.2d.sprite": "1.0.0",
+    "com.unity.cinemachine": "2.9.7",
     "com.unity.collab-proxy": "2.7.1",
     "com.unity.feature.development": "1.0.2",
     "com.unity.ml-agents": "file:D:/public/publics/ml-agents/com.unity.ml-agents",
     "com.unity.timeline": "1.8.6",
-    "com.unity.ugui": "2.0.0",
     "com.unity.visualscripting": "1.8.0",
     "com.unity.modules.accessibility": "1.0.0",
     "com.unity.modules.ai": "1.0.0",
@@ -24,7 +25,6 @@
     "com.unity.modules.terrain": "1.0.0",
     "com.unity.modules.terrainphysics": "1.0.0",
     "com.unity.modules.tilemap": "1.0.0",
-    "com.unity.modules.ui": "1.0.0",
     "com.unity.modules.uielements": "1.0.0",
     "com.unity.modules.umbra": "1.0.0",
     "com.unity.modules.unityanalytics": "1.0.0",
