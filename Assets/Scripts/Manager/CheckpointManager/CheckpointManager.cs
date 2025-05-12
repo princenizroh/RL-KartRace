@@ -7,6 +7,7 @@ namespace KartRace
 {
     public class CheckpointManager : MonoBehaviour
     {
+        private KartController kartController;
         [SerializeField] private float MaxTimeToReachCheckpoint = 30f; // Maximum time to reach the checkpoint
         [SerializeField] private float TimeLeft = 30f;
 
@@ -17,6 +18,8 @@ namespace KartRace
         private Checkpoint lastCheckpoint; 
         private event Action<Checkpoint> OnCheckpointReached;
         public Checkpoint NextCheckPointToReach => nextCheckPointToReach;
+        public int CurrentCheckpointIndex => currentCheckpointIndex;
+        public int TotalCheckpoints => checkpoints.Count;
 
         private void Start()
         {
@@ -45,22 +48,25 @@ namespace KartRace
 
         public void CheckPointReached(Checkpoint checkpoint)
         {
-            if (nextCheckPointToReach != checkpoint) return;
 
-            lastCheckpoint = checkpoints[currentCheckpointIndex];
-            OnCheckpointReached?.Invoke(checkpoint);
-            currentCheckpointIndex++;
+              if(nextCheckPointToReach != checkpoint) return;
+              // --- NORMAL: maju ke checkpoint benar ---
+              lastCheckpoint = checkpoints[currentCheckpointIndex];
+              OnCheckpointReached?.Invoke(checkpoint);
+              currentCheckpointIndex++;
 
-            if (currentCheckpointIndex >= checkpoints.Count)
-            {
-                kartAgent.AddReward(0.5f); // Give a reward for finishing
-                kartAgent.EndEpisode(); // End the episode
-            }
-            else
-            {
-                kartAgent.AddReward(0.5f / checkpoints.Count); // Give a reward for reaching the checkpoint
-                SetNextCheckPoint();
-            }
+              if (currentCheckpointIndex >= checkpoints.Count)
+              {
+                  kartAgent.AddReward(0.5f); // Finish reward
+                  kartAgent.EndEpisode();
+              }
+              else
+              {
+                  // float speedFactor = kartController.Sphere.velocity.magnitude / 20f; // Ganti ini jika tidak sesuai harapan
+                  // kartAgent.AddReward(0.2f + speedFactor * 0.1f);
+                  kartAgent.AddReward(1.0f); // Normal reward for progressing
+                  SetNextCheckPoint();
+              }
         }
 
         private void SetNextCheckPoint()

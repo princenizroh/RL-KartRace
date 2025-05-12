@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1746891261",
+        "python_version": "3.10.12 | packaged by Anaconda, Inc. | (main, Jul  5 2023, 19:01:18) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\princ\\anaconda3\\envs\\mlagents\\Scripts\\mlagents-learn .\\results\\kart-agents-v7\\configuration.yaml --force",
+        "mlagents_version": "1.1.0",
+        "mlagents_envs_version": "1.1.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.2.2+cu121",
+        "numpy_version": "1.23.5",
+        "end_time_seconds": "1746891263"
+    },
+    "total": 2.406462399987504,
+    "count": 1,
+    "self": 0.00415279995650053,
+    "children": {
+        "run_training.setup": {
+            "total": 0.08285260002594441,
+            "count": 1,
+            "self": 0.08285260002594441
+        },
+        "TrainerController.start_learning": {
+            "total": 2.319457000005059,
+            "count": 1,
+            "self": 0.00027840002439916134,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 2.319168300018646,
+                    "count": 1,
+                    "self": 2.319168300018646
+                },
+                "trainer_threads": {
+                    "total": 1.400010660290718e-06,
+                    "count": 1,
+                    "self": 1.400010660290718e-06
+                },
+                "TrainerController._save_models": {
+                    "total": 8.899951353669167e-06,
+                    "count": 1,
+                    "self": 8.899951353669167e-06
+                }
+            }
+        }
+    }
+}

@@ -8,10 +8,10 @@ namespace KartRace
     {
         public Transform[] spawnPoints;
 
-        public Vector3 SelectRandomSpawnpoint()
+        public Transform SelectRandomSpawnpoint()
         {
             int rnd = Random.Range(0, spawnPoints.Length);
-            return spawnPoints[rnd].position;
+            return spawnPoints[rnd];
         }
     }
 }

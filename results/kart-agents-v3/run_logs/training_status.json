@@ -1,0 +1,56 @@
+{
+    "KartAgent": {
+        "checkpoints": [
+            {
+                "steps": 499948,
+                "file_path": "results\\kart-agents-v3\\KartAgent\\KartAgent-499948.onnx",
+                "reward": -0.35270085013829744,
+                "creation_time": 1746887962.447697,
+                "auxillary_file_paths": [
+                    "results\\kart-agents-v3\\KartAgent\\KartAgent-499948.pt"
+                ]
+            },
+            {
+                "steps": 999985,
+                "file_path": "results\\kart-agents-v3\\KartAgent\\KartAgent-999985.onnx",
+                "reward": -0.1965051216001694,
+                "creation_time": 1746888552.990739,
+                "auxillary_file_paths": [
+                    "results\\kart-agents-v3\\KartAgent\\KartAgent-999985.pt"
+                ]
+            },
+            {
+                "steps": 1014230,
+                "file_path": "results\\kart-agents-v3\\KartAgent\\KartAgent-1014230.onnx",
+                "reward": 0.26081104576587677,
+                "creation_time": 1746888569.8382215,
+                "auxillary_file_paths": [
+                    "results\\kart-agents-v3\\KartAgent\\KartAgent-1014230.pt"
+                ]
+            },
+            {
+                "steps": 1444863,
+                "file_path": "results\\kart-agents-v3\\KartAgent\\KartAgent-1444863.onnx",
+                "reward": 0.866938789271646,
+                "creation_time": 1746889087.153385,
+                "auxillary_file_paths": [
+                    "results\\kart-agents-v3\\KartAgent\\KartAgent-1444863.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1444863,
+            "file_path": "results\\kart-agents-v3\\KartAgent.onnx",
+            "reward": 0.866938789271646,
+            "creation_time": 1746889087.153385,
+            "auxillary_file_paths": [
+                "results\\kart-agents-v3\\KartAgent\\KartAgent-1444863.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.2.2+cu121"
+    }
+}
