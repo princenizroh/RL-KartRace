@@ -2,42 +2,6 @@
     "KartAgent": {
         "checkpoints": [
             {
-                "steps": 6999962,
-                "file_path": "results\\kart-agents-1.0\\KartAgent\\KartAgent-6999962.onnx",
-                "reward": 5.707661276062329,
-                "creation_time": 1747045258.9529982,
-                "auxillary_file_paths": [
-                    "results\\kart-agents-1.0\\KartAgent\\KartAgent-6999962.pt"
-                ]
-            },
-            {
-                "steps": 7499977,
-                "file_path": "results\\kart-agents-1.0\\KartAgent\\KartAgent-7499977.onnx",
-                "reward": 8.574541138055233,
-                "creation_time": 1747046128.251563,
-                "auxillary_file_paths": [
-                    "results\\kart-agents-1.0\\KartAgent\\KartAgent-7499977.pt"
-                ]
-            },
-            {
-                "steps": 7999991,
-                "file_path": "results\\kart-agents-1.0\\KartAgent\\KartAgent-7999991.onnx",
-                "reward": 8.97699916611115,
-                "creation_time": 1747046998.957786,
-                "auxillary_file_paths": [
-                    "results\\kart-agents-1.0\\KartAgent\\KartAgent-7999991.pt"
-                ]
-            },
-            {
-                "steps": 8354227,
-                "file_path": "results\\kart-agents-1.0\\KartAgent\\KartAgent-8354227.onnx",
-                "reward": 12.008470166911138,
-                "creation_time": 1747047654.3017938,
-                "auxillary_file_paths": [
-                    "results\\kart-agents-1.0\\KartAgent\\KartAgent-8354227.pt"
-                ]
-            },
-            {
                 "steps": 8374808,
                 "file_path": "results\\kart-agents-1.0\\KartAgent\\KartAgent-8374808.onnx",
                 "reward": null,
@@ -45,15 +9,51 @@
                 "auxillary_file_paths": [
                     "results\\kart-agents-1.0\\KartAgent\\KartAgent-8374808.pt"
                 ]
+            },
+            {
+                "steps": 8499971,
+                "file_path": "results\\kart-agents-1.0\\KartAgent\\KartAgent-8499971.onnx",
+                "reward": 22.798823815584182,
+                "creation_time": 1747049238.1299615,
+                "auxillary_file_paths": [
+                    "results\\kart-agents-1.0\\KartAgent\\KartAgent-8499971.pt"
+                ]
+            },
+            {
+                "steps": 8999991,
+                "file_path": "results\\kart-agents-1.0\\KartAgent\\KartAgent-8999991.onnx",
+                "reward": 11.056931729396355,
+                "creation_time": 1747049983.2868814,
+                "auxillary_file_paths": [
+                    "results\\kart-agents-1.0\\KartAgent\\KartAgent-8999991.pt"
+                ]
+            },
+            {
+                "steps": 9499946,
+                "file_path": "results\\kart-agents-1.0\\KartAgent\\KartAgent-9499946.onnx",
+                "reward": 23.11652071028948,
+                "creation_time": 1747050732.4695902,
+                "auxillary_file_paths": [
+                    "results\\kart-agents-1.0\\KartAgent\\KartAgent-9499946.pt"
+                ]
+            },
+            {
+                "steps": 9515448,
+                "file_path": "results\\kart-agents-1.0\\KartAgent\\KartAgent-9515448.onnx",
+                "reward": null,
+                "creation_time": 1747050762.276374,
+                "auxillary_file_paths": [
+                    "results\\kart-agents-1.0\\KartAgent\\KartAgent-9515448.pt"
+                ]
             }
         ],
         "final_checkpoint": {
-            "steps": 8374808,
+            "steps": 9515448,
             "file_path": "results\\kart-agents-1.0\\KartAgent.onnx",
             "reward": null,
-            "creation_time": 1747047973.1552715,
+            "creation_time": 1747050762.276374,
             "auxillary_file_paths": [
-                "results\\kart-agents-1.0\\KartAgent\\KartAgent-8374808.pt"
+                "results\\kart-agents-1.0\\KartAgent\\KartAgent-9515448.pt"
             ]
         }
     },

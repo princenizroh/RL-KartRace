@@ -8,7 +8,7 @@ namespace KartRace
     public class CheckpointManager : MonoBehaviour
     {
         private KartController kartController;
-        [SerializeField] private float MaxTimeToReachCheckpoint = 30f; // Maximum time to reach the checkpoint
+        [SerializeField] private float MaxTimeToReachCheckpoint = 30f; // Maximum time to reach the checkpoint (optimal 15f)
         [SerializeField] private float TimeLeft = 30f;
 
         [SerializeField] private KartAgents kartAgent;
@@ -49,7 +49,11 @@ namespace KartRace
         public void CheckPointReached(Checkpoint checkpoint)
         {
 
-              if(nextCheckPointToReach != checkpoint) return;
+              if(nextCheckPointToReach != checkpoint)
+              {                
+                  kartAgent.AddReward(-0.5f); // Penalize for going to the wrong checkpoint
+                  return;
+              }
               // --- NORMAL: maju ke checkpoint benar ---
               lastCheckpoint = checkpoints[currentCheckpointIndex];
               OnCheckpointReached?.Invoke(checkpoint);
