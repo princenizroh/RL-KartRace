@@ -5,13 +5,13 @@ using UnityEngine;
 
 namespace KartRace
 {
-    public class CheckpointManager : MonoBehaviour
+    public class CheckpointManagerDQN : MonoBehaviour
     {
         private KartController kartController;
         [SerializeField] private float MaxTimeToReachCheckpoint = 30f; // Maximum time to reach the checkpoint (optimal 15f)
         [SerializeField] private float TimeLeft = 30f;
 
-        [SerializeField] private KartAgents kartAgent;
+        [SerializeField] private KartAgentsDQN kartAgent;
         private Checkpoint nextCheckPointToReach;
         [SerializeField] private int currentCheckpointIndex;
         [SerializeField] private List<Checkpoint> checkpoints;
@@ -33,7 +33,7 @@ namespace KartRace
 
             if (TimeLeft <= 0f)
             {
-                kartAgent.AddReward(-1f);
+                kartAgent.AddReward(-2f);
                 kartAgent.EndEpisode();
             }
         }
@@ -51,7 +51,7 @@ namespace KartRace
 
               if(nextCheckPointToReach != checkpoint)
               {                
-                  kartAgent.AddReward(-0.5f); // Penalize for going to the wrong checkpoint
+                  kartAgent.AddReward(-1.0f); // Penalize for going to the wrong checkpoint
                   return;
               }
               // --- NORMAL: maju ke checkpoint benar ---
@@ -61,14 +61,14 @@ namespace KartRace
 
               if (currentCheckpointIndex >= checkpoints.Count)
               {
-                  kartAgent.AddReward(2.5f); // Finish reward
+                  kartAgent.AddReward(2.0f); // Finish reward
                   kartAgent.EndEpisode();
               }
               else
               {
                   // float speedFactor = kartController.Sphere.velocity.magnitude / 20f; // Ganti ini jika tidak sesuai harapan
                   // kartAgent.AddReward(0.2f + speedFactor * 0.1f);
-                  kartAgent.AddReward(1.0f); // Normal reward for progressing
+                  kartAgent.AddReward(2.0f); // Normal reward for progressing
                   SetNextCheckPoint();
               }
         }

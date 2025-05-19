@@ -99,26 +99,6 @@ namespace KartRace
 
         }
 
-       //         private void OnCollisionEnter(Collision collision)
-        // {
-        //     if (collision.gameObject.CompareTag("wall"))
-        //     {
-        //         // Penalize the agent for hitting a wall
-        //         AddReward(-0.5f);
-        //         // EndEpisode(); // End the episode
-        //     }
-        // }
-        //
-        // private void OnCollisionStay(Collision collision)
-        // {
-        //     if (collision.gameObject.CompareTag("wall"))
-        //     {
-        //         // Penalize the agent for staying in contact with a wall
-        //         AddReward(-0.1f);
-        //     }
-        // }
-
-        
     }
 }
 
