@@ -104,7 +104,7 @@ namespace KartRace
 
             if (stuckCounter >= maxStuckSteps)
             {
-                AddReward(-1f);  // Penalti keras karena dianggap stuck
+                AddReward(-0.3f);  // Penalti keras karena dianggap stuck
                 EndEpisode();
             }
         }

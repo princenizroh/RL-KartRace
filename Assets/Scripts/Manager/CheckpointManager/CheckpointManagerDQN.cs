@@ -33,7 +33,7 @@ namespace KartRace
 
             if (TimeLeft <= 0f)
             {
-                kartAgent.AddReward(-2f);
+                kartAgent.AddReward(-0.3f);
                 kartAgent.EndEpisode();
             }
         }
@@ -51,7 +51,7 @@ namespace KartRace
 
               if(nextCheckPointToReach != checkpoint)
               {                
-                  kartAgent.AddReward(-1.0f); // Penalize for going to the wrong checkpoint
+                  kartAgent.AddReward(-0.3f); // Penalize for going to the wrong checkpoint
                   return;
               }
               // --- NORMAL: maju ke checkpoint benar ---
