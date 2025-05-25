@@ -61,14 +61,14 @@ namespace KartRace
 
               if (currentCheckpointIndex >= checkpoints.Count)
               {
-                  kartAgent.AddReward(2.0f); // Finish reward
+                  kartAgent.AddReward(10.0f); // Finish reward
                   kartAgent.EndEpisode();
               }
               else
               {
                   // float speedFactor = kartController.Sphere.velocity.magnitude / 20f; // Ganti ini jika tidak sesuai harapan
                   // kartAgent.AddReward(0.2f + speedFactor * 0.1f);
-                  kartAgent.AddReward(2.0f); // Normal reward for progressing
+                  kartAgent.AddReward(5.0f); // Normal reward for progressing
                   SetNextCheckPoint();
               }
         }
