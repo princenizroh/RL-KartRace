@@ -96,6 +96,8 @@ namespace KartRace
 
         public void Respawn()
         {
+            if (spawnPointManager == null)
+                return;
             Transform spawn = spawnPointManager.SelectRandomSpawnpoint();
             sphere.velocity = Vector3.zero;
             sphere.angularVelocity = Vector3.zero;
