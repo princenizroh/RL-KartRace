@@ -20,7 +20,7 @@ namespace KartRace
 
         public override void OnEpisodeBegin()
         {
-            checkpointManager.ResetCheckpoints(); 
+            checkpointManager.ResetCheckpoints();
             kartController.Respawn(); // Reset the kart's position and state
         }
 
@@ -71,7 +71,7 @@ namespace KartRace
             }
             //
             // // Reward shaping kecil untuk hadap ke checkpoint
-             float alignment = Vector3.Dot(forward, directionToCheckpoint); // [-1, 1]
+            float alignment = Vector3.Dot(forward, directionToCheckpoint); // [-1, 1]
             AddReward(alignment * 0.01f);
             //
             // // Reward makin dekat ke checkpoint
@@ -98,6 +98,10 @@ namespace KartRace
             action[1] = Input.GetAxisRaw("Vertical");
 
         }
+
+
+
+
 
     }
 }
