@@ -8,7 +8,7 @@ namespace KartRace
     {
         private void OnTriggerEnter(Collider other)
         {
-            Debug.Log($"Masuk trigger oleh: {other.name}");
+            // Debug.Log($"Masuk trigger oleh: {other.name}");
             LapTimerManager timer = other.GetComponent<LapTimerManager>();
 
             if (timer != null)

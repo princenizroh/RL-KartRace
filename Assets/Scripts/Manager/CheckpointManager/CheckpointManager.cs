@@ -8,8 +8,8 @@ namespace KartRace
     public class CheckpointManager : MonoBehaviour
     {
         private KartController kartController;
-        [SerializeField] private float MaxTimeToReachCheckpoint = 30f; // Maximum time to reach the checkpoint (optimal 15f)
-        [SerializeField] private float TimeLeft = 30f;
+        [SerializeField] private float MaxTimeToReachCheckpoint = 15f; // Maximum time to reach the checkpoint (optimal 15f)
+        [SerializeField] private float TimeLeft = 15f;
 
         [SerializeField] private KartAgents kartAgent;
         private Checkpoint nextCheckPointToReach;

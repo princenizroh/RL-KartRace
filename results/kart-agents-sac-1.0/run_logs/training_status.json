@@ -2,58 +2,58 @@
     "KartAgent": {
         "checkpoints": [
             {
-                "steps": 16499987,
-                "file_path": "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-16499987.onnx",
+                "steps": 74999959,
+                "file_path": "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-74999959.onnx",
                 "reward": null,
-                "creation_time": 1748132330.8783214,
+                "creation_time": 1749560117.1095717,
                 "auxillary_file_paths": [
-                    "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-16499987.pt"
+                    "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-74999959.pt"
                 ]
             },
             {
-                "steps": 16999958,
-                "file_path": "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-16999958.onnx",
+                "steps": 75499938,
+                "file_path": "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-75499938.onnx",
                 "reward": null,
-                "creation_time": 1748137247.7099807,
+                "creation_time": 1749564887.9643602,
                 "auxillary_file_paths": [
-                    "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-16999958.pt"
+                    "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-75499938.pt"
                 ]
             },
             {
-                "steps": 17499992,
-                "file_path": "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-17499992.onnx",
+                "steps": 75999944,
+                "file_path": "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-75999944.onnx",
                 "reward": null,
-                "creation_time": 1748142207.7118104,
+                "creation_time": 1749569654.2028806,
                 "auxillary_file_paths": [
-                    "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-17499992.pt"
+                    "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-75999944.pt"
                 ]
             },
             {
-                "steps": 17999984,
-                "file_path": "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-17999984.onnx",
+                "steps": 76499987,
+                "file_path": "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-76499987.onnx",
                 "reward": null,
-                "creation_time": 1748147173.3505588,
+                "creation_time": 1749574427.0378149,
                 "auxillary_file_paths": [
-                    "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-17999984.pt"
+                    "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-76499987.pt"
                 ]
             },
             {
-                "steps": 18328824,
-                "file_path": "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-18328824.onnx",
+                "steps": 76558429,
+                "file_path": "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-76558429.onnx",
                 "reward": null,
-                "creation_time": 1748150483.5089157,
+                "creation_time": 1749575098.7287533,
                 "auxillary_file_paths": [
-                    "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-18328824.pt"
+                    "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-76558429.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 18328824,
+            "steps": 76558429,
             "file_path": "results\\kart-agents-sac-1.0\\KartAgent.onnx",
             "reward": null,
-            "creation_time": 1748150483.5089157,
+            "creation_time": 1749575098.7287533,
             "auxillary_file_paths": [
-                "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-18328824.pt"
+                "results\\kart-agents-sac-1.0\\KartAgent\\KartAgent-76558429.pt"
             ]
         }
     },

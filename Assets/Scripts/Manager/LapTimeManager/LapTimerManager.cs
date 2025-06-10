@@ -12,6 +12,8 @@ namespace KartRace
         [SerializeField] private float[] lapTimes = new float[10];
         private bool checkpointPassed = false;
         [SerializeField] private int wallCollisionCount = 0;
+        [SerializeField] private int[] collisionCounts = new int[10];
+
 
 
         private void OnCollisionEnter(Collision collision)
@@ -25,7 +27,7 @@ namespace KartRace
                     if (Mathf.Abs(normal.y) < 0.5f)
                     {
                         wallCollisionCount++;
-                        Debug.Log($"Wall hit detected via normal! Total: {wallCollisionCount}");
+                        // Debug.Log($"Wall hit detected via normal! Total: {wallCollisionCount}");
                         break;
                     }
                 }
@@ -38,7 +40,7 @@ namespace KartRace
             {
                 hasStarted = true;
                 startTime = Time.time;
-                Debug.Log("Collider START lap at " + startTime);
+                // Debug.Log("Collider START lap at " + startTime);
             }
         }
 
@@ -61,10 +63,13 @@ namespace KartRace
             float finishTime = Time.time;
             float lapTime = finishTime - startTime;
 
-            if (lapCount < lapTimes.Length)
-                lapTimes[lapCount] = lapTime;
+            int index = lapCount % lapTimes.Length;
+            lapTimes[index] = lapTime;
+            collisionCounts[index] = wallCollisionCount;
 
             int currentLapIndex = lapCount;
+
+            
 
             lapCount++;
             startTime = Time.time;
@@ -81,7 +86,22 @@ namespace KartRace
 
             Debug.Log($"Collider FINISH lap at {finishTime} — Time taken: {lapTime} seconds");
         }
-        
-        
+        public int GetLastCollisionCount()
+        {
+            if (lapCount == 0)
+                return 0;
+            int index = ((lapCount - 1) % collisionCounts.Length + collisionCounts.Length) % collisionCounts.Length;
+            Debug.Log($"Last collision count for lap {lapCount - 1}: {collisionCounts[index]}");
+            return collisionCounts[index];
+        }
+        public float GetLastLapTime()
+        {
+            if (lapCount == 0)
+                return 0f;
+
+            int index = (lapCount - 1) % lapTimes.Length;
+
+            return lapTimes[index];
+        }
     }
 }

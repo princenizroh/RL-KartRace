@@ -12,7 +12,7 @@ namespace KartRace
             if (lapTimer != null)
             {
                 lapTimer.SetCheckpointPassed(true);
-                Debug.Log("Checkpoint dilewati oleh: " + other.name);
+                // Debug.Log("Checkpoint dilewati oleh: " + other.name);
             }
         }
     }
